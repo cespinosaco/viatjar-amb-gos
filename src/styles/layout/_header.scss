@@ -1,0 +1,15 @@
+header {
+  background: $color-primary;
+  color: $color-light;
+
+  nav ul {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+  }
+
+  a {
+    color: $color-light;
+    text-decoration: none;
+  }
+}

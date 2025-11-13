@@ -1,0 +1,21 @@
+ {
+ "extends": [
+ "stylelint-config-recommended-scss"
+ ],
+ "plugins": [
+ "stylelint-scss",
+ "stylelint-order"
+ ],
+ "rules": {
+ "selector-class-pattern": [
+ "^[a-z]([a-z0-9-]+)?(__[a-z0-9-]+)?(--[a-z0-9-]+)?$",
+ { "message": "Les classes han de seguir BEM: block__element--modifier" }
+ ],
+ "order/properties-alphabetical-order": true,
+ "scss/at-rule-no-unknown": true,
+ "scss/dollar-variable-pattern": ["^[a-z0-9-]+$", { "message": "Variables en kebab-case" }],
+ "scss/percent-placeholder-pattern": "^[a-z0-9-]+$",
+ "color-hex-length": "short",
+ "no-descending-specificity": null
+ }
+ }

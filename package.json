@@ -1,0 +1,29 @@
+{
+  "name": "viatjar-amb-gos",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel src/index.html src/categoria/index.html src/det1/index.html src/det2/index.html src/links/index.html",
+    "build": "parcel build src/index.html src/categoria/index.html src/det1/index.html src/det2/index.html src/links/index.html",
+    "stylelint": "stylelint \"src/**/*.scss\" --fix",
+    "lint:css": "stylelint \"src/**/*.scss\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.16.1",
+    "parcel": "^2.16.1",
+    "sass": "^1.94.0",
+    "stylelint": "^16.25.0",
+    "stylelint-config-recommended-scss": "^16.0.2",
+    "stylelint-config-standard-scss": "^16.0.0",
+    "stylelint-order": "^7.0.0",
+    "stylelint-scss": "^6.12.1"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^7.1.0",
+    "aos": "^2.3.4"
+  }
+}
