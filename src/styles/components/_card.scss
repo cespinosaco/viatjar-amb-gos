@@ -1,1 +1,61 @@
-/* Estils de les targetes de destinacions, etc. */
+.card {
+  align-items: stretch;
+  background-color: $color-light;
+  border-radius: 1.25rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  text-decoration: none;
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.card:hover,
+.card:focus-visible {
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.18);
+  transform: translateY(-4px);
+}
+
+.card__figure {
+  margin: 0;
+}
+
+.card__image {
+  display: block;
+  height: 190px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.card__body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1.5rem 1.4rem 1.4rem;
+}
+
+.card__title {
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+}
+
+.card__text {
+  font-size: 0.95rem;
+  margin-bottom: 0.25rem;
+}
+
+.card__link {
+  align-items: center;
+  color: $color-secondary;
+  display: inline-flex;
+  font-size: 0.9rem;
+  font-weight: 600;
+  gap: 0.4rem;
+  margin-top: auto;
+}
+
+.card__link i {
+  font-size: 0.9rem;
+}

@@ -47,30 +47,6 @@
   max-width: 45rem;
 }
 
-.hero__cta {
-  align-items: center;
-  background-color: $color-secondary;
-  border: none;
-  border-radius: 999px;
-  color: $color-light;
-  cursor: pointer;
-  display: inline-flex;
-  font-weight: 600;
-  gap: 0.5rem;
-  margin: 0 auto;
-  padding: 0.9rem 1.6rem;
-  text-decoration: none;
-}
-
-.hero__cta:hover,
-.hero__cta:focus-visible {
-  background-color: color.adjust($color-secondary, $lightness: -7%);
-}
-
-.hero__cta i {
-  font-size: 1.1rem;
-}
-
 @media (max-width: 768px) {
   .hero {
     min-height: 80vh;
@@ -193,5 +169,62 @@
 
   .start__item {
     text-align: left;
+  }
+}
+
+.popular {
+  padding: 4rem 0;
+}
+
+.popular__inner {
+  @include container;
+}
+
+.popular__header {
+  margin: 0 auto 3rem;
+  max-width: 38rem;
+  text-align: center;
+}
+
+.popular__title {
+  font-size: clamp(1.6rem, 3vw, 2rem);
+  margin-bottom: 0.75rem;
+}
+
+.popular__intro {
+  font-size: 1rem;
+}
+
+.popular__grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.popular__cta-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 2.5rem;
+}
+
+.popular__cta {
+  font-size: 1rem;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .popular__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .popular {
+    padding: 3rem 0;
+  }
+
+  .popular__grid {
+    grid-template-columns: 1fr;
   }
 }
