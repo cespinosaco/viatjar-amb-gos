@@ -1,1 +1,46 @@
-/* Estils específics de la pàgina /categoria */
+.catalog {
+  padding: 4rem 0;
+}
+
+.catalog__inner {
+  @include container;
+}
+
+.catalog__header {
+  margin: 0 auto 3rem;
+  max-width: 40rem;
+  text-align: center;
+}
+
+.catalog__title {
+  font-size: clamp(1.8rem, 3.2vw, 2.3rem);
+  margin-bottom: 0.75rem;
+}
+
+.catalog__intro {
+  font-size: 1rem;
+}
+
+.catalog__grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .catalog__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .catalog {
+    padding: 3rem 0;
+  }
+
+  .catalog__grid {
+    grid-template-columns: 1fr;
+  }
+}
