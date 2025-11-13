@@ -1,9 +1,111 @@
 .hero {
-  @include container;
-  padding: 4rem 0;
+  align-items: center;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.55),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url('/src/images/hero-gos-europa.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: $color-light;
+  display: flex;
+  min-height: 70vh;
+  text-align: center;
+}
 
-  h1 {
-    font-size: 2.4rem;
-    margin-bottom: 1rem;
+.hero__content {
+  @include container;
+  max-width: 55rem;
+  padding: 3rem 1rem;
+}
+
+.hero__content--centered {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero__title {
+  align-items: center;
+  display: inline-flex;
+  font-size: clamp(2.4rem, 5vw, 4rem);
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+  white-space: nowrap; //evito així, de moment, el salt de línia
+}
+
+.hero__title i {
+  font-size: 1.8rem;
+}
+
+.hero__text {
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  margin-bottom: 2rem;
+  max-width: 45rem;
+}
+
+.hero__cta {
+  align-items: center;
+  background-color: $color-secondary;
+  border: none;
+  border-radius: 999px;
+  color: $color-light;
+  cursor: pointer;
+  display: inline-flex;
+  font-weight: 600;
+  gap: 0.5rem;
+  margin: 0 auto;
+  padding: 0.9rem 1.6rem;
+  text-decoration: none;
+}
+
+.hero__cta:hover,
+.hero__cta:focus-visible {
+  background-color: color.adjust($color-secondary, $lightness: -7%);
+}
+
+.hero__cta i {
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: 80vh;
+  }
+
+  .hero__content {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .hero__title {
+    font-size: clamp(2rem, 7vw, 2.6rem);
+  }
+
+  .hero__text {
+    font-size: 0.95rem;
+  }
+
+  .hero__cta {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    background-position: center top;
+    min-height: 50vh;
+  }
+
+  .hero__title {
+    flex-wrap: wrap;
+    justify-content: center;
+    white-space: normal;
+  }
+
+  .hero__text {
+    max-width: 100%;
   }
 }

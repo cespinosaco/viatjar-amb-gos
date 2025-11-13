@@ -3,3 +3,12 @@
   max-width: $max-width;
   padding: 0 1rem;
 }
+
+@mixin hover-darken($color, $amount) {
+  background-color: $color;
+
+  &:hover,
+  &:focus-visible {
+    background-color: color.adjust($color, $lightness: - $amount);
+  }
+}
