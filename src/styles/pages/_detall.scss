@@ -1,1 +1,133 @@
-/* Estils específics de les pàgines /det1, /det2 */
+.detail-hero {
+  align-items: center;
+  color: $color-light;
+  display: flex;
+  min-height: 60vh;
+  text-align: center;
+}
+
+.detail-hero__content {
+  @include container;
+  max-width: 42rem;
+  padding: 3.5rem 1rem;
+}
+
+.detail-hero__eyebrow {
+  font-size: 0.9rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.detail-hero__title {
+  font-size: clamp(2.2rem, 4vw, 3rem);
+  margin-bottom: 0.75rem;
+}
+
+.detail-hero__subtitle {
+  font-size: 1rem;
+}
+
+iframe {
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+/* FONS ESPECÍFICs */
+
+.detail-hero--berlin {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.55),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url('/src/images/berlin-gos.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.detail-hero--toscana {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.55),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url('/src/images/toscana-gos.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Contingut verrtical */
+
+.detail__content {
+  @include container;
+  padding: 3rem 1rem 4rem;
+}
+
+.detail__text {
+  font-size: 1rem;
+  margin: 0 auto 2.5rem;
+  max-width: 44rem;
+}
+
+.detail__text p + p {
+  margin-top: 1rem;
+}
+
+.detail__list {
+  margin-top: 1rem;
+  padding-left: 1.25rem;
+}
+
+.detail__list li + li {
+  margin-top: 0.5rem;
+}
+
+/* Galeria 1 fila */
+
+.detail-gallery {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.detail-gallery__item {
+  margin: 0;
+}
+
+.detail-gallery__image {
+  border-radius: 1rem;
+  display: block;
+  height: 190px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.detail-gallery__item figcaption {
+  font-size: 0.85rem;
+  margin-top: 0.4rem;
+}
+
+/* Respomnsive */
+
+@media (max-width: 900px) {
+  .detail-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .detail-hero {
+    min-height: 50vh;
+  }
+
+  .detail-hero__content {
+    padding: 2.5rem 1rem;
+  }
+
+  .detail-gallery {
+    grid-template-columns: 1fr;
+  }
+}

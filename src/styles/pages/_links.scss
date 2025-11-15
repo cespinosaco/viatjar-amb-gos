@@ -1,1 +1,61 @@
-/* Estils específics de la pàgina /links */
+.links {
+  padding: 4rem 0;
+}
+
+.links__inner {
+  @include container;
+}
+
+.links__header {
+  margin: 0 auto 3rem;
+  max-width: 42rem;
+  text-align: center;
+}
+
+.links__title {
+  font-size: clamp(1.8rem, 3.2vw, 2.3rem);
+  margin-bottom: 0.75rem;
+}
+
+.links__intro {
+  font-size: 1rem;
+}
+
+.links__section {
+  margin-bottom: 2.5rem;
+}
+
+.links__section-title {
+  font-size: 1.2rem;
+  margin-bottom: 0.75rem;
+}
+
+.links__list {
+  list-style: disc;
+  padding-left: 1.5rem;
+}
+
+.links__list li + li {
+  margin-top: 0.5rem;
+}
+
+.links__text {
+  font-size: 1rem;
+  max-width: 42rem;
+}
+
+/* Responsive */
+
+@media (max-width: 600px) {
+  .links {
+    padding: 3rem 0;
+  }
+
+  .links__header {
+    text-align: left;
+  }
+
+  .links__title {
+    font-size: 1.6rem;
+  }
+}

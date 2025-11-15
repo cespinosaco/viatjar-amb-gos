@@ -2,64 +2,123 @@
 <html lang="ca">
   <head>
     <meta charset="utf-8">
-    <title>Viatjar per Europa amb gos</title>
+    <title>Berlín amb gos</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
-    <a class="skip-link" href="#main">Salta al contingut principal</a>
 
     <header class="site-header">
-      <div class="site-header__inner">
-        <a class="site-header__logo" href="/">
-          <i class="fa-solid fa-dog" aria-hidden="true"></i>
-          <span>Viatjar per Europa amb gos</span>
-        </a>
+  <div class="site-header__inner">
+    <a class="site-header__logo" href="/">
+      <i class="fa-solid fa-dog" aria-hidden="true"></i>
+      <span>Europe&gos</span>
+    </a>
 
-        <nav class="site-nav" aria-label="Navegació principal">
-          <ul class="site-nav__list">
-            <li><a href="/">Inici</a></li>
-            <li><a href="/categoria">Destinacions</a></li>
-            <li><a href="/links">Enllaços i crèdits</a></li>
-          </ul>
-        </nav>
-      </div>
+    <nav class="site-nav" aria-label="Navegació principal">
+      <ul class="site-nav__list">
+        <li class="site-nav__item">
+          <a href="/" class="site-nav__link">Inici</a>
+        </li>
+        <li class="site-nav__item">
+          <a href="/categoria" class="site-nav__link">Destinacions</a>
+        </li>
+        <li class="site-nav__item">
+          <a href="/links" class="site-nav__link">Enllaços i crèdits</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
     </header>
 
-     <main id="main">
-      <article>
-        <header>
-          <h1>Berlín amb gos</h1>
-          <p>Guia per gaudir de Berlín amb el teu pelut: parcs, cafés i consells pràctics.</p>
-          <figure>
-            <img src="/src/images/berlin-gos.jpg" alt="Gos passejant davant de la Porta de Brandenburg a Berlín.">
-            <figcaption>Passeig per la Porta de Brandenburg amb gos.</figcaption>
-          </figure>
+    <main id="main">
+      <article class="detail detail--berlin">
+        <!-- HERO -->
+        <header class="detail-hero detail-hero--berlin" aria-labelledby="detail-berlin-title">
+          <div class="detail-hero__content">
+            <p class="detail-hero__eyebrow">Guia de destinació</p>
+            <h1 id="detail-berlin-title" class="detail-hero__title">
+              Berlín amb gos
+            </h1>
+            <p class="detail-hero__subtitle">
+              Una ciutat verda, pet-friendly i perfecta per combinar passejos llargs amb vida urbana.
+            </p>
+          </div>
         </header>
 
-        <section>
-          <h2>Per què Berlín és dog-friendly</h2>
-          <p>Paràgraf 1…</p>
-          <p>Paràgraf 2…</p>
-          <p>Paràgraf 3…</p>
-        </section>
-
-        <section>
-          <h2>Llocs imprescindibles per anar amb gos</h2>
-          <!-- 3 imatges + text -->
-        </section>
-
-        <section>
-          <h2>Vídeo recomanat</h2>
-          <div class="video-wrapper">
-            <iframe
-              src="https://www.youtube.com/embed/XXXXXXXX"
-              title="Viatjar a Berlín amb gos"
-              allowfullscreen>
-            </iframe>
+        <!-- CONTINGUT EN TEXT -->
+        <section class="detail__content" aria-labelledby="detail-berlin-intro">
+          <div class="detail__text">
+            <h2 id="detail-berlin-intro">Per què Berlín és ideal per viatjar amb gos</h2>
+            <p>
+              Berlín destaca per la quantitat de parcs i zones verdes repartides per tots els barris.
+              És fàcil trobar camins ombrívols, zones d’esbarjo per a gossos i espais amplis on passejar
+              amb corretja sense sensació d’aglomeració.
+            </p>
+            <p>
+              Molts cafès i restaurants accepten mascotes, sobretot si t’asseus a la terrassa. No és
+              estrany trobar bols d’aigua i personal acostumat a rebre clients amb gos, fet que fa
+              que l’estada sigui molt més còmoda.
+            </p>
+            <p>
+              El transport públic (metro, tramvia i tren) permet viatjar amb gos, habitualment amb
+              corretja i, en alguns casos, morrió. Això et dona molta flexibilitat per moure’t per
+              la ciutat sense haver de dependre del cotxe.
+            </p>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/X_rqNADi-1E?si=760QWQUb9AUZRAIs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <h2>Zones recomanades i consells pràctics</h2>
+            <ul class="detail__list">
+              <li>
+                <strong>Tiergarten:</strong> el gran parc cèntric de Berlín, ideal per passejades
+                llargues i moments de calma.
+              </li>
+              <li>
+                <strong>Prenzlauer Berg:</strong> barri ple de cafès dog-friendly i amb ambient tranquil
+                per fer vida de barri amb el teu pelut.
+              </li>
+              <li>
+                <strong>Voltants del riu Spree:</strong> passejos agradables al costat del riu, especialment
+                al capvespre.
+              </li>
+            </ul>
           </div>
+
+          <!-- GALERIA D’IMATGES -->
+          <section class="detail-gallery" aria-label="Imatges de Berlín amb gos">
+            <figure class="detail-gallery__item">
+              <img
+                src="../images/berlin-aerea.jpg"
+                alt="Fotografia aèrea de Berlín."
+                class="detail-gallery__image"
+              >
+              <figcaption>Fotografia aèrea de Berlín.</figcaption>
+            </figure>
+
+            <figure class="detail-gallery__item">
+              <img
+                src="../images/berlin-brandemburg.jpg"
+                alt="La gran porta de Brandemburg."
+                class="detail-gallery__image"
+              >
+              <figcaption>La gran porta de Brandemburg.</figcaption>
+            </figure>
+
+            <figure class="detail-gallery__item">
+              <img
+                src="../images/berlin-parlament.jpg"
+                alt="El Parlament de la ciutat."
+                class="detail-gallery__image"
+              >
+              <figcaption>El Parlament de la ciutat.</figcaption>
+            </figure>
+          </section>
         </section>
       </article>
+      <button class="back-to-top" type="button" aria-label="Torna a l'inici de la pàgina">
+  <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+</button>
     </main>
+
 
     <footer class="site-footer">
       <p>&copy; 2025 Viatjar per Europa amb gos</p>

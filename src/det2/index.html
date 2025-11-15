@@ -2,65 +2,116 @@
 <html lang="ca">
   <head>
     <meta charset="utf-8">
-    <title>Viatjar per Europa amb gos</title>
+    <title>Toscana amb gos</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
-    <a class="skip-link" href="#main">Salta al contingut principal</a>
 
     <header class="site-header">
-      <div class="site-header__inner">
-        <a class="site-header__logo" href="/">
-          <i class="fa-solid fa-dog" aria-hidden="true"></i>
-          <span>Viatjar per Europa amb gos</span>
-        </a>
+  <div class="site-header__inner">
+    <a class="site-header__logo" href="/">
+      <i class="fa-solid fa-dog" aria-hidden="true"></i>
+      <span>Europe&gos</span>
+    </a>
 
-        <nav class="site-nav" aria-label="Navegació principal">
-          <ul class="site-nav__list">
-            <li><a href="/">Inici</a></li>
-            <li><a href="/categoria">Destinacions</a></li>
-            <li><a href="/links">Enllaços i crèdits</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+    <nav class="site-nav" aria-label="Navegació principal">
+      <ul class="site-nav__list">
+        <li class="site-nav__item">
+          <a href="/" class="site-nav__link">Inici</a>
+        </li>
+        <li class="site-nav__item">
+          <a href="/categoria" class="site-nav__link">Destinacions</a>
+        </li>
+        <li class="site-nav__item">
+          <a href="/links" class="site-nav__link">Enllaços i crèdits</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
      <main id="main">
-      <article>
-        <header>
-          <h1>Berlín amb gos</h1>
-          <p>Guia per gaudir de Berlín amb el teu pelut: parcs, cafés i consells pràctics.</p>
-          <figure>
-            <img src="/src/images/berlin-gos.jpg" alt="Gos passejant davant de la Porta de Brandenburg a Berlín.">
-            <figcaption>Passeig per la Porta de Brandenburg amb gos.</figcaption>
-          </figure>
+      <article class="detail detail--toscana">
+        <!-- HERO -->
+        <header class="detail-hero detail-hero--toscana" aria-labelledby="detail-toscana-title">
+          <div class="detail-hero__content">
+            <p class="detail-hero__eyebrow">Guia de destinació</p>
+            <h1 id="detail-toscana-title" class="detail-hero__title">
+              Ruta per la Toscana amb gos
+            </h1>
+            <p class="detail-hero__subtitle">
+              Florència, paisatges verds allotjaments rurals on el teu gos és benvingut.
+            </p>
+          </div>
         </header>
 
-        <section>
-          <h2>Per què Berlín és dog-friendly</h2>
-          <p>Paràgraf 1…</p>
-          <p>Paràgraf 2…</p>
-          <p>Paràgraf 3…</p>
-        </section>
-
-        <section>
-          <h2>Llocs imprescindibles per anar amb gos</h2>
-          <!-- 3 imatges + text -->
-        </section>
-
-        <section>
-          <h2>Vídeo recomanat</h2>
-          <div class="video-wrapper">
-            <iframe
-              src="https://www.youtube.com/embed/XXXXXXXX"
-              title="Viatjar a Berlín amb gos"
-              allowfullscreen>
-            </iframe>
+        <!-- CONTINGUT EN TEXT -->
+        <section class="detail__content" aria-labelledby="detail-toscana-intro">
+          <div class="detail__text">
+            <h2 id="detail-toscana-intro">Per què la Toscana és ideal per viatjar amb gos?</h2>
+            <p>
+              La Toscana és una zona d'Itàlia ideal per a gossos perquè combina pobles molt tranquils,
+              carreteres secundàries i allotjaments rurals. Per tant, es tracta d'un entorn perfecte per viatjar sense cap pressa. Hi ha moltíssimes cases rurals i hotels adaptats per a les mascotes. Masies que et treuran l'alè!
+            </p>
+            <p>
+              Precisament, la regió de la Toscana és una destinació ideal per moure’t en cotxe: pots adaptar les parades al ritme del teu gos, d'aquesta manera aprofitar per fer passejades curtes i buscar punts d’ombra en els moments que pertoqui.
+            </p>
+            <p>
+              A més, molts pobles disposen de places i zones enjardinades on fer una pausa tranquil·la,
+              i és habitual trobar bols d’aigua a l’entrada de comerços i cafeteries.
+            </p>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/YhNw6-oAmmo?si=4m5DyqYCaS5Tqkz5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <h2>Pobles i zones recomanades</h2>
+            <ul class="detail__list">
+              <li>
+                <strong>Florència:</strong> com visitar la Toscana sense fer aquesta parada obligatoria? Una de les ciutats més boniques d'Italia per recórrer amb el teu company.
+              </li>
+              <li>
+                <strong>Val d’Orcia:</strong> paisatges de postal amb turons i camps, ideals per fer rutes
+                suaus amb el teu gos.
+              </li>
+              <li>
+                <strong>Volterra o Siena:</strong> ciutats amb encant, amb prou zones per caminar i descansar
+                lluny de les zones més massificades.
+              </li>
+            </ul>
           </div>
+
+          <!-- GALERIA D’IMATGES -->
+          <section class="detail-gallery" aria-label="Imatges de la Toscana amb gos">
+            <figure class="detail-gallery__item">
+              <img
+                src="../images/toscana-florencia.jpg"
+                alt="Pont de la ciutat de Florencia, a la Toscana."
+                class="detail-gallery__image"
+              >
+              <figcaption>Pont de la ciutat de Florencia, a la Toscana.</figcaption>
+            </figure>
+
+            <figure class="detail-gallery__item">
+              <img
+                src="../images/toscana-carretera.jpg"
+                alt="Carretera envoltada de camps a la Toscana."
+                class="detail-gallery__image"
+              >
+              <figcaption>Carretera envoltada de camps a la Toscana.</figcaption>
+            </figure>
+
+            <figure class="detail-gallery__item">
+              <img
+                src="../images/toscana-florencia2.jpg"
+                alt="Fotografia aèria de la ciutat de Florència."
+                class="detail-gallery__image"
+              >
+              <figcaption>Fotografia aèria de la ciutat de Florència.</figcaption>
+            </figure>
+          </section>
         </section>
       </article>
+      <button class="back-to-top" type="button" aria-label="Torna a l'inici de la pàgina">
+  <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+</button>
     </main>
-
     <footer class="site-footer">
       <p>&copy; 2025 Viatjar per Europa amb gos</p>
     </footer>

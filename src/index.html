@@ -6,24 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
-    <a class="skip-link" href="#main">Salta al contingut principal</a>
 
     <header class="site-header">
-      <div class="site-header__inner">
-        <a class="site-header__logo" href="/">
-          <i class="fa-solid fa-dog" aria-hidden="true"></i>
-          <span>Europe&gos</span>
-        </a>
+  <div class="site-header__inner">
+    <a class="site-header__logo" href="/">
+      <i class="fa-solid fa-dog" aria-hidden="true"></i>
+      <span>Europe&gos</span>
+    </a>
 
-        <nav class="site-nav" aria-label="Navegació principal">
-          <ul class="site-nav__list">
-            <li><a href="/">Inici</a></li>
-            <li><a href="/categoria">Destinacions</a></li>
-            <li><a href="/links">Enllaços i crèdits</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+    <nav class="site-nav" aria-label="Navegació principal">
+      <ul class="site-nav__list">
+        <li class="site-nav__item">
+          <a href="/" class="site-nav__link">Inici</a>
+        </li>
+        <li class="site-nav__item">
+          <a href="/categoria" class="site-nav__link">Destinacions</a>
+        </li>
+        <li class="site-nav__item">
+          <a href="/links" class="site-nav__link">Enllaços i crèdits</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
      <main id="main">
       <section class="hero" aria-labelledby="hero-title">
@@ -160,9 +165,9 @@
         </figure>
 
         <div class="card__body">
-          <h3 class="card__title">Altres destinacions dog-friendly</h3>
+          <h3 class="card__title">París amb gos</h3>
           <p class="card__text">
-            Explora més ciutats i rutes europees on podreu gaudir plegats sense renunciar a res.
+            La ciutat que enamora acompanyat o acompanyada del teu pelut.
           </p>
           <span class="card__link">
             Veure més
@@ -180,7 +185,9 @@
   </a>
 </div>
 </section>
-
+<button class="back-to-top" type="button" aria-label="Torna a l'inici de la pàgina">
+  <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+</button>
     </main>
 
     <footer class="site-footer">

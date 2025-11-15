@@ -1,15 +1,94 @@
 .site-header {
-  background: $color-primary;
+  background-color: $color-primary;
   color: $color-light;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
 
-  nav ul {
-    display: flex;
-    gap: 1rem;
-    list-style: none;
+.site-header__inner {
+  @include container;
+  align-items: center;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: space-between;
+  padding: 0.9rem 1rem;
+}
+
+.site-header__logo {
+  align-items: center;
+  color: $color-light;
+  column-gap: 0.5rem;
+  display: inline-flex;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.site-header__logo span {
+  font-size: 1rem;
+}
+
+.site-header__logo i {
+  font-size: 1.4rem;
+}
+
+/* Navegació */
+
+.site-nav {
+  font-size: 0.95rem;
+}
+
+.site-nav__list {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-nav__list a {
+  color: $color-light;
+  text-decoration: none;
+}
+
+.site-nav__link {
+  color: $color-light;
+  padding-bottom: 0.1rem;
+  position: relative;
+  text-decoration: none;
+}
+
+.site-nav__link::after {
+  background-color: $color-secondary;
+  content: '';
+  height: 2px;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  transform: scaleX(0.4);
+  transform-origin: left;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  width: 100%;
+}
+
+.site-nav__link:hover::after,
+.site-nav__link:focus-visible::after,
+.site-nav__link[aria-current='page']::after {
+  opacity: 1;
+  transform: scaleX(1);
+}
+
+/* Responsive */
+
+@media (max-width: 720px) {
+  .site-header__inner {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 0.75rem 1rem;
   }
 
-  a {
-    color: $color-light;
-    text-decoration: none;
+  .site-nav__list {
+    flex-wrap: wrap;
+    gap: 0.75rem 1.5rem;
   }
 }
