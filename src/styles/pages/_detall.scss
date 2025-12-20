@@ -3,6 +3,8 @@
   color: $color-light;
   display: flex;
   min-height: 60vh;
+  overflow: hidden;
+  position: relative;
   text-align: center;
 }
 
@@ -10,6 +12,8 @@
   @include container;
   max-width: 42rem;
   padding: 3.5rem 1rem;
+  position: relative;
+  z-index: 2;
 }
 
 .detail-hero__eyebrow {
@@ -27,6 +31,33 @@
   font-size: 1rem;
 }
 
+/* capa imatge (picture) */
+.detail-hero__media {
+  inset: 0;
+  position: absolute;
+  z-index: 0;
+}
+
+.detail-hero__media img {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+/* capa gradient (igual que abans) */
+.detail-hero::before {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.55),
+    rgba(0, 0, 0, 0.7)
+  );
+  content: '';
+  inset: 0;
+  position: absolute;
+  z-index: 1;
+}
+
 iframe {
   border-radius: 1rem;
   margin-bottom: 1rem;
@@ -35,25 +66,13 @@ iframe {
 
 /* FONS ESPECÍFICs */
 
-.detail-hero--berlin {
-  background-image: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.55),
-      rgba(0, 0, 0, 0.7)
-    ),
-    url('/src/images/berlin-gos.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .detail-hero--toscana {
   background-image: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0.55),
       rgba(0, 0, 0, 0.7)
     ),
-    url('/src/images/toscana-gos.jpg');
+    url('/src/images/original/toscana-gos.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

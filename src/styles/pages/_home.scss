@@ -1,24 +1,47 @@
 .hero {
   align-items: center;
-  background-image: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.55),
-      rgba(0, 0, 0, 0.7)
-    ),
-    url('/src/images/hero-gos-europa.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   color: $color-light;
   display: flex;
   min-height: 70vh;
+  overflow: hidden;
+
+  position: relative;
   text-align: center;
+}
+
+/* capa de la imatge (picture) */
+.hero__media {
+  inset: 0;
+  position: absolute;
+  z-index: 0;
+}
+
+.hero__media img {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+/* capa del gradient (igual que el que tenies al background-image) */
+.hero::before {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.55),
+    rgba(0, 0, 0, 0.7)
+  );
+  content: '';
+  inset: 0;
+  position: absolute;
+  z-index: 1;
 }
 
 .hero__content {
   @include container;
   max-width: 55rem;
   padding: 3rem 1rem;
+  position: relative;
+  z-index: 2;
 }
 
 .hero__content--centered {
@@ -71,8 +94,8 @@
 
 @media (max-width: 480px) {
   .hero {
-    background-position: center top;
     min-height: 50vh;
+    object-position: center top;
   }
 
   .hero__title {
@@ -226,5 +249,37 @@
 
   .popular__grid {
     grid-template-columns: 1fr;
+  }
+}
+
+.home-clip {
+  @include container;
+  margin: 4rem auto;
+  max-width: 100%;
+}
+
+.home-clip img {
+
+  border-radius: 1rem;
+
+  /* clip-path amb forma orgànica */
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 90%,
+    50% 100%,
+    0% 90%
+  );
+  display: block;
+  height: auto;
+  max-height: 380px;     // 👈 controla l’alçada
+  object-fit: cover;     // manté el retall bonic
+  object-position: center;
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .home-clip img {
+    max-height: 240px;
   }
 }

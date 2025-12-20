@@ -10,7 +10,17 @@
     <header class="site-header">
   <div class="site-header__inner">
     <a class="site-header__logo" href="/">
-      <i class="fa-solid fa-dog" aria-hidden="true"></i>
+      <svg class="logo-svg" viewBox="0 0 64 64" role="img" aria-labelledby="logoTitle logoDesc">
+    <title id="logoTitle">Europe&gos</title>
+    <desc id="logoDesc">Icona de petjada amb animació subtil.</desc>
+
+    <!-- coixinets -->
+    <circle class="logo-svg__pad logo-svg__pad--1" cx="18" cy="20" r="5"></circle>
+    <circle class="logo-svg__pad logo-svg__pad--2" cx="30" cy="14" r="5"></circle>
+    <circle class="logo-svg__pad logo-svg__pad--3" cx="42" cy="20" r="5"></circle>
+    <!-- base -->
+    <path class="logo-svg__base" d="M32 28c-8 0-14 6-14 14 0 7 6 12 14 12s14-5 14-12c0-8-6-14-14-14z"></path>
+  </svg>
       <span>Europe&gos</span>
     </a>
 
@@ -35,13 +45,45 @@
       <article class="detail detail--berlin">
         <!-- HERO -->
         <header class="detail-hero detail-hero--berlin" aria-labelledby="detail-berlin-title">
+          <picture class="detail-hero__media" aria-hidden="true">
+    <source
+      type="image/avif"
+      media="(max-width: 600px)"
+      srcset="../images/opt/berlin-gos-mobile-960.avif 960w"
+      sizes="100vw"
+    />
+    <source
+      type="image/avif"
+      media="(min-width: 601px)"
+      srcset="../images/opt/berlin-gos-desktop-1440.avif 1440w"
+      sizes="100vw"
+    />
+    <source
+      type="image/webp"
+      media="(max-width: 600px)"
+      srcset="../images/opt/berlin-gos-mobile-960.webp 960w"
+      sizes="100vw"
+    />
+    <source
+      type="image/webp"
+      media="(min-width: 601px)"
+      srcset="../images/opt/berlin-gos-desktop-1440.webp 1440w"
+      sizes="100vw"
+    />
+    <img
+      src="../images/original/berlin-gos.jpg"
+      alt=""
+      loading="eager"
+      decoding="async"
+    />
+  </picture>
           <div class="detail-hero__content">
             <p class="detail-hero__eyebrow">Guia de destinació</p>
             <h1 id="detail-berlin-title" class="detail-hero__title">
               Berlín amb gos
             </h1>
             <p class="detail-hero__subtitle">
-              Una ciutat verda, pet-friendly i perfecta per combinar passejos llargs amb vida urbana.
+              Una ciutat verda, <span lang="en">pet-friendly</span> i perfecta per combinar passejos llargs amb vida urbana.
             </p>
           </div>
         </header>
@@ -65,7 +107,7 @@
               corretja i, en alguns casos, morrió. Això et dona molta flexibilitat per moure’t per
               la ciutat sense haver de dependre del cotxe.
             </p>
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/X_rqNADi-1E?si=760QWQUb9AUZRAIs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/X_rqNADi-1E?si=760QWQUb9AUZRAIs" title="Com viatjar a Berlín amb gos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             <h2>Zones recomanades i consells pràctics</h2>
             <ul class="detail__list">
               <li>
@@ -73,7 +115,7 @@
                 llargues i moments de calma.
               </li>
               <li>
-                <strong>Prenzlauer Berg:</strong> barri ple de cafès dog-friendly i amb ambient tranquil
+                <strong>Prenzlauer Berg:</strong> barri ple de cafès <span lang="en">dog-friendly</span> i amb ambient tranquil
                 per fer vida de barri amb el teu pelut.
               </li>
               <li>
@@ -87,7 +129,7 @@
           <section class="detail-gallery" aria-label="Imatges de Berlín amb gos">
             <figure class="detail-gallery__item">
               <img
-                src="../images/berlin-aerea.jpg"
+                src="../images/original/berlin-aerea.jpg"
                 alt="Fotografia aèrea de Berlín."
                 class="detail-gallery__image"
               >
@@ -96,7 +138,7 @@
 
             <figure class="detail-gallery__item">
               <img
-                src="../images/berlin-brandemburg.jpg"
+                src="../images/original/berlin-brandemburg.jpg"
                 alt="La gran porta de Brandemburg."
                 class="detail-gallery__image"
               >
@@ -105,7 +147,7 @@
 
             <figure class="detail-gallery__item">
               <img
-                src="../images/berlin-parlament.jpg"
+                src="../images/original/berlin-parlament.jpg"
                 alt="El Parlament de la ciutat."
                 class="detail-gallery__image"
               >

@@ -6,11 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
-
+    <a class="skip-link" href="#main">Saltar al contingut principal</a>
     <header class="site-header">
   <div class="site-header__inner">
     <a class="site-header__logo" href="/">
-      <i class="fa-solid fa-dog" aria-hidden="true"></i>
+      <svg class="logo-svg" viewBox="0 0 64 64" role="img" aria-labelledby="logoTitle logoDesc">
+    <title id="logoTitle">Europe&gos</title>
+    <desc id="logoDesc">Icona de petjada amb animació subtil.</desc>
+
+    <!-- coixinets -->
+    <circle class="logo-svg__pad logo-svg__pad--1" cx="18" cy="20" r="5"></circle>
+    <circle class="logo-svg__pad logo-svg__pad--2" cx="30" cy="14" r="5"></circle>
+    <circle class="logo-svg__pad logo-svg__pad--3" cx="42" cy="20" r="5"></circle>
+    <!-- base -->
+    <path class="logo-svg__base" d="M32 28c-8 0-14 6-14 14 0 7 6 12 14 12s14-5 14-12c0-8-6-14-14-14z"></path>
+  </svg>
       <span>Europe&gos</span>
     </a>
 
@@ -32,12 +42,35 @@
 
      <main id="main">
       <section class="hero" aria-labelledby="hero-title">
+        <picture class="hero__media" aria-hidden="true">
+    <source
+      type="image/avif"
+      srcset="./images/opt/hero-gos-europa-480.avif 480w,
+              ./images/opt/hero-gos-europa-960.avif 960w,
+              ./images/opt/hero-gos-europa-1440.avif 1440w"
+      sizes="100vw"
+    />
+    <source
+      type="image/webp"
+      srcset="./images/opt/hero-gos-europa-480.webp 480w,
+              ./images/opt/hero-gos-europa-960.webp 960w,
+              ./images/opt/hero-gos-europa-1440.webp 1440w"
+      sizes="100vw"
+    />
+    <!-- fallback per si un navegador no accepta ni avif ni webp -->
+    <img
+      src="./images/original/hero-gos-europa.jpg"
+      alt=""
+      loading="eager"
+      decoding="async"
+    />
+  </picture>
       <div class="hero__content hero__content--centered" data-aos="fade-right">
       <h1 id="hero-title" class="hero__title">
         Viatjar per Europa amb el teu gos
       </h1>
       <p class="hero__text">
-        Guies, consells i destinacions dog-friendly per gaudir del viatge amb el teu pelut,
+        Guies, consells i destinacions <span lang="en">dog-friendly</span> per gaudir del viatge amb el teu pelut,
         des de grans capitals fins a petites rutes en cotxe.
       </p>
       <a class="hero__cta" href="/categoria">
@@ -96,6 +129,15 @@
   </div>
 </section>
 
+<div class="home-clip">
+  <img
+    src="./images/opt/costabrava-gos-960.avif"
+    alt=""
+    loading="lazy"
+    decoding="async"
+  />
+</div>
+
 <section class="popular" aria-labelledby="popular-title">
   <div class="popular__inner">
 
@@ -114,10 +156,18 @@
       <a href="/det1" class="card popular__card" data-aos="fade-up">
         <figure class="card__figure">
           <img
-            src="./images/berlin-gos.jpg"
-            alt="Persona passejant amb el seu gos davant de la Porta de Brandenburg a Berlín."
-            class="card__image"
-          >
+  class="card__image"
+  src="./images/opt/berlin-gos-960.avif"
+  srcset="
+    ./images/opt/berlin-gos-480.avif 480w,
+    ./images/opt/berlin-gos-960.avif 960w,
+    ./images/opt/berlin-gos-1440.avif 1440w
+  "
+  sizes="(max-width: 600px) 92vw, (max-width: 900px) 45vw, 360px"
+  alt="Gos a Berlín."
+  loading="lazy"
+  decoding="async"
+/>
         </figure>
 
         <div class="card__body">
@@ -136,10 +186,18 @@
       <a href="/det2" class="card popular__card" data-aos="fade-up" data-aos-delay="100">
         <figure class="card__figure">
           <img
-            src="/src/images/toscana-gos.jpg"
-            alt="Noia amb gos a la Toscana."
-            class="card__image"
-          >
+  class="card__image"
+  src="./images/opt/toscana-gos-960.avif"
+  srcset="
+    ./images/opt/toscana-gos-480.avif 480w,
+    ./images/opt/toscana-gos-960.avif 960w,
+    ./images/opt/toscana-gos-1440.avif 1440w
+  "
+  sizes="(max-width: 600px) 92vw, (max-width: 900px) 45vw, 360px"
+  alt="Noia abraçant un gos a la Toscana."
+  loading="lazy"
+  decoding="async"
+/>
         </figure>
 
         <div class="card__body">
@@ -158,10 +216,18 @@
       <a href="/categoria" class="card popular__card" data-aos="fade-up" data-aos-delay="200">
         <figure class="card__figure">
           <img
-            src="/src/images/paris-gos.jpg"
-            alt="Noi amb gos en una motxilla pels carrers de París."
-            class="card__image"
-          >
+  class="card__image"
+  src="./images/opt/paris-gos-960.avif"
+  srcset="
+    ./images/opt/paris-gos-480.avif 480w,
+    ./images/opt/paris-gos-960.avif 960w,
+    ./images/opt/paris-gos-1440.avif 1440w
+  "
+  sizes="(max-width: 600px) 92vw, (max-width: 900px) 45vw, 360px"
+  alt="Noi amb gos en una motxilla pels carrers de París."
+  loading="lazy"
+  decoding="async"
+/>
         </figure>
 
         <div class="card__body">

@@ -1,0 +1,130 @@
+[
+  {
+    "image": "amsterdam-gos.jpg",
+    "beforeFormat": "jpg",
+    "beforeBytes": 1982636,
+    "afterFormatSample": "avif/webp",
+    "afterAvifBytes": 65676,
+    "afterWebpBytes": 78786
+  },
+  {
+    "image": "berlin-aerea.jpg",
+    "beforeFormat": "jpg",
+    "beforeBytes": 2185893,
+    "afterFormatSample": "avif/webp",
+    "afterAvifBytes": 46216,
+    "afterWebpBytes": 56238
+  },
+  {
+    "image": "berlin-brandemburg.jpg",
+    "beforeFormat": "jpg",
+    "beforeBytes": 2107403,
+    "afterFormatSample": "avif/webp",
+    "afterAvifBytes": 41730,
+    "afterWebpBytes": 56900
+  },
+  {
+    "image": "berlin-gos.jpg",
+    "beforeFormat": "jpg",
+    "beforeBytes": 167453,
+    "afterFormatSample": "avif/webp",
+    "afterAvifBytes": 31130,
+    "afterWebpBytes": 45354
+  },
+  {
+    "image": "berlin-parlament.jpg",
+    "beforeFormat": "jpg",
+    "beforeBytes": 2541420,
+    "afterFormatSample": "avif/webp",
+    "afterAvifBytes": 65307,
+    "afterWebpBytes": 81980
+  },
+  {
+    "image": "copenhaguen-gos.jpg",
+    "beforeFormat": "jpg",
+    "beforeBytes": 278627,
+    "afterFormatSample": "avif/webp",
+    "afterAvifBytes": 44383,
+    "afterWebpBytes": 58674
+  },
+  {
+    "image": "costabrava-gos.jpg",
+    "beforeFormat": "jpg",
+    "beforeBytes": 533608,
+    "afterFormatSample": "avif/webp",
+    "afterAvifBytes": 11135,
+    "afterWebpBytes": 17714
+  },
+  {
+    "image": "edimburg-gos.jpg",
+    "beforeFormat": "jpg",
+    "beforeBytes": 2078523,
+    "afterFormatSample": "avif/webp",
+    "afterAvifBytes": 79596,
+    "afterWebpBytes": 100616
+  },
+  {
+    "image": "hero-gos-europa.jpg",
+    "beforeFormat": "jpg",
+    "beforeBytes": 6535120,
+    "afterFormatSample": "avif/webp",
+    "afterAvifBytes": 42078,
+    "afterWebpBytes": 56030
+  },
+  {
+    "image": "lisboa-gos.jpg",
+    "beforeFormat": "jpg",
+    "beforeBytes": 1936753,
+    "afterFormatSample": "avif/webp",
+    "afterAvifBytes": 39977,
+    "afterWebpBytes": 55656
+  },
+  {
+    "image": "paris-gos.jpg",
+    "beforeFormat": "jpg",
+    "beforeBytes": 1695452,
+    "afterFormatSample": "avif/webp",
+    "afterAvifBytes": 22959,
+    "afterWebpBytes": 32160
+  },
+  {
+    "image": "toscana-carretera.jpg",
+    "beforeFormat": "jpg",
+    "beforeBytes": 1790271,
+    "afterFormatSample": "avif/webp",
+    "afterAvifBytes": 36688,
+    "afterWebpBytes": 50722
+  },
+  {
+    "image": "toscana-florencia.jpg",
+    "beforeFormat": "jpg",
+    "beforeBytes": 841108,
+    "afterFormatSample": "avif/webp",
+    "afterAvifBytes": 60175,
+    "afterWebpBytes": 74480
+  },
+  {
+    "image": "toscana-florencia2.jpg",
+    "beforeFormat": "jpg",
+    "beforeBytes": 1305764,
+    "afterFormatSample": "avif/webp",
+    "afterAvifBytes": 48147,
+    "afterWebpBytes": 57776
+  },
+  {
+    "image": "toscana-gos.jpg",
+    "beforeFormat": "jpg",
+    "beforeBytes": 4822607,
+    "afterFormatSample": "avif/webp",
+    "afterAvifBytes": 17217,
+    "afterWebpBytes": 27666
+  },
+  {
+    "image": "viena-gos.jpg",
+    "beforeFormat": "jpg",
+    "beforeBytes": 1245922,
+    "afterFormatSample": "avif/webp",
+    "afterAvifBytes": 62747,
+    "afterWebpBytes": 80568
+  }
+]

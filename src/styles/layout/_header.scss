@@ -1,3 +1,19 @@
+.skip-link {
+  background: #000;
+  border-radius: 0.5rem;
+  color: #fff;
+  left: -9999px;
+  padding: 0.75rem 1rem;
+  position: absolute;
+  text-decoration: none;
+  top: 0.5rem;
+  z-index: 2000;
+}
+
+.skip-link:focus {
+  left: 0.5rem;
+}
+
 .site-header {
   background-color: $color-primary;
   color: $color-light;
@@ -28,8 +44,52 @@
   font-size: 1rem;
 }
 
-.site-header__logo i {
-  font-size: 1.4rem;
+.site-header__logo .logo-svg {
+  flex: 0 0 auto;
+  height: 28px;
+  width: 28px;
+}
+
+/* que el svg agafi el color del header */
+.site-header__logo .logo-svg__pad,
+.site-header__logo .logo-svg__base {
+  fill: currentColor;
+}
+
+/* animació subtil */
+.site-header__logo .logo-svg {
+  animation: logoPulse 2.4s ease-in-out infinite;
+  transform-origin: 50% 50%;
+}
+
+.site-header__logo .logo-svg__pad--1 {
+  animation: padPop 2.4s ease-in-out infinite;
+}
+.site-header__logo .logo-svg__pad--2 {
+  animation: padPop 2.4s ease-in-out infinite 0.15s;
+}
+.site-header__logo .logo-svg__pad--3 {
+  animation: padPop 2.4s ease-in-out infinite 0.3s;
+}
+
+@keyframes logoPulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.92; transform: scale(1.04); }
+}
+
+@keyframes padPop {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-1px); }
+}
+
+/* Accessibilitat: respecta preferència de menys moviment */
+@media (prefers-reduced-motion: reduce) {
+  .site-header__logo .logo-svg,
+  .site-header__logo .logo-svg__pad--1,
+  .site-header__logo .logo-svg__pad--2,
+  .site-header__logo .logo-svg__pad--3 {
+    animation: none !important;
+  }
 }
 
 /* Navegació */
