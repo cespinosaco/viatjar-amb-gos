@@ -23,7 +23,7 @@
   width: 100%;
 }
 
-/* capa del gradient (igual que el que tenies al background-image) */
+/* capa del gradient */
 .hero::before {
   background-image: linear-gradient(
     to bottom,
@@ -272,8 +272,8 @@
   );
   display: block;
   height: auto;
-  max-height: 380px;     // 👈 controla l’alçada
-  object-fit: cover;     // manté el retall bonic
+  max-height: 380px;//controla l’alçada
+  object-fit: cover;// manté el retall bonic
   object-position: center;
   width: 100%;
 }

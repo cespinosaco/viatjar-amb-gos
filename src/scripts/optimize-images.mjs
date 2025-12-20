@@ -61,7 +61,7 @@ for (const file of files) {
 await fs.writeFile("image-report.json", JSON.stringify(report, null, 2), "utf8");
 
 // --- ART DIRECTION: Berlin hero (imatge vertical) ---
-// Generem dos crops diferents:
+// Genera dos crops diferents:
 // 1) mobile: aspecte més vertical (4:5), focalitzat al centre
 // 2) desktop: aspecte panoràmic (16:9), també al centre
 
