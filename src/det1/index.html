@@ -128,41 +128,71 @@
           <!-- GALERIA D’IMATGES -->
           <section class="detail-gallery" aria-label="Imatges de Berlín amb gos">
             <figure class="detail-gallery__item">
-              <img
-                src="../images/opt/berlin-aerea-1440.webp"
-                alt="Fotografia aèrea de Berlín."
-                class="detail-gallery__image"
-                 width="800"
-                height="533"
-                loading="lazy"
-                decoding="async"
-              >
+              <picture>
+                <source
+                  media="(max-width: 600px)"
+                  srcset="../images/opt/berlin-aerea-480.webp"
+                >
+                <source
+                  media="(min-width: 601px)"
+                  srcset="../images/opt/berlin-aerea-480.webp"
+                >
+                <img
+                  src="../images/opt/berlin-aerea-480.webp"
+                  alt="Fotografia aèria de Berlín."
+                  class="detail-gallery__image"
+                  width="800"
+                  height="533"
+                  loading="lazy"
+                  decoding="async"
+                >
+              </picture>
               <figcaption>Fotografia aèrea de Berlín.</figcaption>
             </figure>
 
             <figure class="detail-gallery__item">
-              <img
-                src="../images/opt/berlin-brandemburg-1440.webp"
-                alt="La gran porta de Brandemburg."
-                class="detail-gallery__image"
-                 width="800"
-                height="533"
-                loading="lazy"
-                decoding="async"
-              >
+              <picture>
+                <source
+                  media="(max-width: 600px)"
+                  srcset="../images/opt/berlin-brandemburg-480.webp"
+                >
+                <source
+                  media="(min-width: 601px)"
+                  srcset="../images/opt/berlin-brandemburg-480.webp"
+                >
+                <img
+                  src="../images/opt/berlin-brandemburg-480.webp"
+                  alt="La gran porta de Brandemburg."
+                  class="detail-gallery__image"
+                  width="800"
+                  height="533"
+                  loading="lazy"
+                  decoding="async"
+                >
+              </picture>
               <figcaption>La gran porta de Brandemburg.</figcaption>
             </figure>
 
             <figure class="detail-gallery__item">
-              <img
-                src="../images/opt/berlin-parlament-1440.webp"
-                alt="El Parlament de la ciutat."
-                class="detail-gallery__image"
-                 width="800"
-                height="533"
-                loading="lazy"
-                decoding="async"
-              >
+              <picture>
+                <source
+                  media="(max-width: 600px)"
+                  srcset="../images/opt/berlin-parlament-480.webp"
+                >
+                <source
+                  media="(min-width: 601px)"
+                  srcset="../images/opt/berlin-parlament-480.webp"
+                >
+                <img
+                  src="../images/opt/berlin-parlament-480.webp"
+                  alt="El Parlament de la ciutat."
+                  class="detail-gallery__image"
+                  width="800"
+                  height="533"
+                  loading="lazy"
+                  decoding="async"
+                >
+              </picture>
               <figcaption>El Parlament de la ciutat.</figcaption>
             </figure>
           </section>
